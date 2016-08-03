@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FA0DAC05-D52D-4696-B7AF-97061EE9D2D1}</ProjectGuid>
+    <RootNamespace>GP3Coursework</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="cCamera.cpp" />
+    <ClCompile Include="cColours.cpp" />
+    <ClCompile Include="cCube.cpp" />
+    <ClCompile Include="cEnemy.cpp" />
+    <ClCompile Include="cFont.cpp" />
+    <ClCompile Include="cFontMgr.cpp" />
+    <ClCompile Include="cInputMgr.cpp" />
+    <ClCompile Include="cLaser.cpp" />
+    <ClCompile Include="cLight.cpp" />
+    <ClCompile Include="cMaterial.cpp" />
+    <ClCompile Include="cModel.cpp" />
+    <ClCompile Include="cModelLoader.cpp" />
+    <ClCompile Include="cPlayer.cpp" />
+    <ClCompile Include="cPyramid.cpp" />
+    <ClCompile Include="cShapes.cpp" />
+    <ClCompile Include="cSound.cpp" />
+    <ClCompile Include="cSoundMgr.cpp" />
+    <ClCompile Include="cSphere.cpp" />
+    <ClCompile Include="cStarfield.cpp" />
+    <ClCompile Include="cTexture.cpp" />
+    <ClCompile Include="cTriangle.cpp" />
+    <ClCompile Include="cWNDManager.cpp" />
+    <ClCompile Include="GameConstants.cpp" />
+    <ClCompile Include="Studentmain.cpp" />
+    <ClCompile Include="tardisWarsGame.cpp" />
+    <ClCompile Include="windowOGL.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cCamera.h" />
+    <ClInclude Include="cColours.h" />
+    <ClInclude Include="cCube.h" />
+    <ClInclude Include="cEnemy.h" />
+    <ClInclude Include="cFont.h" />
+    <ClInclude Include="cFontMgr.h" />
+    <ClInclude Include="cInputMgr.h" />
+    <ClInclude Include="cLaser.h" />
+    <ClInclude Include="cLight.h" />
+    <ClInclude Include="cMaterial.h" />
+    <ClInclude Include="cModel.h" />
+    <ClInclude Include="cModelLoader.h" />
+    <ClInclude Include="cPlayer.h" />
+    <ClInclude Include="cPyramid.h" />
+    <ClInclude Include="cShapes.h" />
+    <ClInclude Include="cSound.h" />
+    <ClInclude Include="cSoundMgr.h" />
+    <ClInclude Include="cSphere.h" />
+    <ClInclude Include="cStarfield.h" />
+    <ClInclude Include="cTexture.h" />
+    <ClInclude Include="cTriangle.h" />
+    <ClInclude Include="cWNDManager.h" />
+    <ClInclude Include="GameConstants.h" />
+    <ClInclude Include="tardisWarsGame.h" />
+    <ClInclude Include="wglext.h" />
+    <ClInclude Include="windowOGL.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Libraries\alut.lib" />
+    <Library Include="Libraries\DevIL.lib" />
+    <Library Include="Libraries\freeglut.lib" />
+    <Library Include="Libraries\ftgl.lib" />
+    <Library Include="Libraries\glm-0.3.2Lib.lib" />
+    <Library Include="Libraries\ILU.lib" />
+    <Library Include="Libraries\ILUT.lib" />
+    <Library Include="Libraries\OpenAL32.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

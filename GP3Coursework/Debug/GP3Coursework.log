@@ -1,0 +1,53 @@
+﻿Build started 03/08/2016 15:09:14.
+     1>Project "C:\Users\Emma\Documents\Visual Studio 2013\Projects\GP3Coursework\GP3Coursework\GP3Coursework.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Studentmain.cpp tardisWarsGame.cpp
+         tardisWarsGame.cpp
+         Studentmain.cpp
+     1>c:\users\emma\documents\visual studio 2013\projects\gp3coursework\gp3coursework\studentmain.cpp(153): warning C4244: 'argument' : conversion from 'const int' to 'GLfloat', possible loss of data
+     1>c:\users\emma\documents\visual studio 2013\projects\gp3coursework\gp3coursework\studentmain.cpp(567): warning C4554: '&' : check operator precedence for possible error; use parentheses to clarify precedence
+     1>c:\users\emma\documents\visual studio 2013\projects\gp3coursework\gp3coursework\studentmain.cpp(569): warning C4305: 'argument' : truncation from 'int' to 'ALboolean'
+     1>c:\users\emma\documents\visual studio 2013\projects\gp3coursework\gp3coursework\studentmain.cpp(569): warning C4309: 'argument' : truncation of constant value
+     1>c:\users\emma\documents\visual studio 2013\projects\gp3coursework\gp3coursework\studentmain.cpp(45): warning C4101: 'filter' : unreferenced local variable
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Emma\Documents\Visual Studio 2013\Projects\GP3Coursework\Debug\GP3Coursework.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Emma\Documents\Visual Studio 2013\Projects\GP3Coursework\Debug\GP3Coursework.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Emma\Documents\Visual Studio 2013\Projects\GP3Coursework\Debug\GP3Coursework.lib" /MACHINE:X86 Debug\cCamera.obj
+         Debug\cColours.obj
+         Debug\cCube.obj
+         Debug\cEnemy.obj
+         Debug\cFont.obj
+         Debug\cFontMgr.obj
+         Debug\cInputMgr.obj
+         Debug\cLaser.obj
+         Debug\cLight.obj
+         Debug\cMaterial.obj
+         Debug\cModel.obj
+         Debug\cModelLoader.obj
+         Debug\cPlayer.obj
+         Debug\cPyramid.obj
+         Debug\cShapes.obj
+         Debug\cSound.obj
+         Debug\cSoundMgr.obj
+         Debug\cSphere.obj
+         Debug\cStarfield.obj
+         Debug\cTexture.obj
+         Debug\cTriangle.obj
+         Debug\cWNDManager.obj
+         Debug\GameConstants.obj
+         Debug\Studentmain.obj
+         Debug\tardisWarsGame.obj
+         Debug\windowOGL.obj
+         Libraries\alut.lib
+         Libraries\DevIL.lib
+         Libraries\freeglut.lib
+         Libraries\ftgl.lib
+         "Libraries\glm-0.3.2Lib.lib"
+         Libraries\ILU.lib
+         Libraries\ILUT.lib
+         Libraries\OpenAL32.lib
+         GP3Coursework.vcxproj -> C:\Users\Emma\Documents\Visual Studio 2013\Projects\GP3Coursework\Debug\GP3Coursework.exe
+     1>Done Building Project "C:\Users\Emma\Documents\Visual Studio 2013\Projects\GP3Coursework\GP3Coursework\GP3Coursework.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.52
